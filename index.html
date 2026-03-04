@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shohoz Login</title>
+    <title>ZEEO BD</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" />
 
@@ -67,37 +67,39 @@
     transform: translateY(-50%);
     background-color: rgb(0 114 132);
     color: white;
-    padding: 10px;
+    padding: 8px;
     border: none;
     cursor: pointer;
     z-index: 10;
     border-radius: 27px;
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
 }
 
  .prev:hover, .next:hover {
     background-color: rgb(0 114 132);
 }
 
-  /* Previous button (on the left) */
   .prev {
     left: 10px;
   }
 
-  /* Next button (on the right) */
   .next {
     right: 10px;
   }
 
-  /* Button styling */
   .prev i, .next i {
-    font-size: 1.5rem; /* Increase icon size */
+    font-size: 17px;
   }
+
+  .slider-padding{
+    padding: 0px 60px;
+}
+
 
 .slider-box{
     position: relative;
-    padding: 0px 68px;
+    padding: 0px 150px;
 }
 
 .shop-now a{
@@ -105,34 +107,33 @@
     text-decoration: none;
     background: #f3a118;
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
-    padding: 10px 30px;
-    border-radius: 10px;
+    padding: 10px 45px;
+    border-radius: 40px;
     text-transform: uppercase;
-    margin-top: 40px;
 }
 
 
 .section-title{
     background: #007284;
     text-align: center;
-    padding: 10px;
+    padding: 15px 10px;
     margin-bottom: 30px;
 }
 
 .section-title h2 {
     margin: 0px;
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
 }
 
 .description-cont h3{
     margin: 0px;
-    border: 2px dashed #f3a118;
+    border: 2px dotted #f3a118;
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     border-radius: 50px;
     margin-bottom: 30px;
@@ -157,31 +158,120 @@
     font-weight: 600;
 }
 
+
 .description-cont ul li:last-child{
     border-bottom: 0px;
+}
+
+.description-cont ul li i{
+    font-size: 25px;
 }
 
 .description-cont{
     padding: 0px 30px;
 }
 
+.dec-order-btn{
+    border: 2px solid #f3a118;
+    display: inline-block;
+    padding: 2px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.dec-order-btn a{
+    display: inline-block;
+    text-decoration: none;
+    background: #f3a118;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+.dec-order-btn:hover a{
+    background: #007284;
+}
+
+.dec-order-btn:hover{
+    border-color: #007284;
+}
+
+.dec-order-btn a:hover .dec-order-btn{
+    border: 2px solid #f3a118;
+}
+
 .description-sec{
     padding-bottom: 50px;
 }
 
+.description-sec-padding{
+    padding: 0px 60px;
+}
 
-.gallery-sec{
+
+
+.gallery-sec {
+    background-color: #FFF8F2;
+    padding: 0px 0px 50px;
+}
+
+.description-sec {
+    margin-bottom: 20px;
+    margin-top: 60px;
     background-color: #e5f0f2;
-    padding: 50px 0px;
+}
+
+.gallery-item{
+    border: 2px solid #007284;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.gallery-item img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.elementor-shape {
+    direction: ltr;
+    left: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.elementor-shape-top svg {
+    height: 100px;
+        width: 100%;
+}
+
+.elementor-shape .elementor-shape-fill {
+    fill: #fff;
+    transform: rotateY(0deg);
+    transform-origin: center;
+}
+
+.elementor-shape .elementor-shape-fill {
+    fill: #fff;
+    transform: rotateY(0deg);
+    transform-origin: center;
+}
+
+.gallery-padding{
+    padding: 0px 60px;
 }
 
  .gallery-header{
-    border: 2px dotted #007284;
-    border-top: 10px solid #f3a118;
+    border: 2px solid #007284;
+    border-top: 10px solid #007284;
     border-radius: 25px;
     padding: 15px;
     text-align: center;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .gallery-header h2{
@@ -192,13 +282,22 @@
 }
 
 
-.exclusive-sec{
-    padding-top: 50px;
+.exclusive-sec {
+    margin-top: 70px;
+    background: #d5eff4;
 }
 
 .exclusive-item-sec{
     background-color: #e5f0f2;
     padding: 30px 0px 50px 0px;
+}
+
+.exclusive-sec-padding{
+    padding: 0px 60px;
+}
+
+.exclusive-cont img{
+    margin-top: -80px;
 }
 
 
@@ -210,7 +309,7 @@
 
 .exclusive-items {
     width: 49%;
-    border: 1px solid #000;
+    border: 1px solid #007284;
     padding: 20px;
     border-radius: 10px;
     background: #fff;
@@ -224,16 +323,17 @@
     background: #007284;
 }
 
-.exclusive-cont h2{
+.exclusive-cont h2 {
     font-weight: 600;
     color: #007284;
-    font-size: 35px;
-    margin-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .exclusive-items h3{
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .exclusive-items p{
@@ -257,8 +357,23 @@
     color: #fff;
 }
 
-.form-sec{
+.form-sec {
     padding: 50px 0px;
+    background: #e5f0f2;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.form-sec-border{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 20px 60px;
+}
+
+.form-heading-sec{
+    margin: 40px 0px;
+    background: #fcf6eb;
+    padding: 20px 0px;
 }
 
 .form-heading{
@@ -267,8 +382,13 @@
     border-radius: 25px;
     padding: 20px;
     text-align: center;
-    margin-bottom: 40px;
 }
+
+.form-heading-sec-pading{
+    padding: 0px 60px;
+}
+
+
 
 .form-heading h2 {
     margin: 0px;
@@ -278,11 +398,12 @@
 }
 
 .form-box{
-    border: 2px solid #007284;
-    border-top: 10px solid #007284;
-    border-radius: 25px;
-    padding: 20px;
-    background: #FDF3E2;
+    padding: 20px 10px 20px 10px;
+    border-style: solid;
+    border-width: 20px 009px 7px 3px;
+    border-color: #007284;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 11px 11px 19px 2px rgba(32.96406249999998, 31.315859374999985, 31.315859374999985, .96);
 }
 .form-cont{
     padding: 0px 40px 40px 0px;
@@ -299,6 +420,7 @@
 }
 .form-label span{
     color: red;
+    font-size: 16px;
 }
 .form-control {
     height: 45px;
@@ -440,8 +562,8 @@
     }
 
     .form-check-input-payment {
-      width: 1.4em;
-      height: 1.4em;
+      width: 1em;
+      height: 1em;
       border-radius: 50%;
     }
 
@@ -449,9 +571,10 @@
       font-size: 16px;
       color: #333;
       margin-left: 10px;
-      display: flex;
+      display: inline;
       align-items: center;
       gap: 20px;
+      width: 90%;
     }
 
     .form-check-input-payment:focus {
@@ -475,15 +598,24 @@
         font-weight: 600;
         height: 55px;
         margin-bottom: 25px;
+        color: #fff;
     }
     .btn-submit:hover{
         background: #f3a118;
         border-color: #f3a118;
+        color: #fff;
+    }
+
+    .btn-submit:focus{
+        background: #f3a118;
+        border-color: #f3a118;
+        color: #fff;
     }
 
     .button-box p{
         margin-bottom: 0px;
         font-size: 15px;
+
     }
 
 .footer-sec{
@@ -511,7 +643,7 @@
 }
 
 .form-prducut-itmes {
-    border: 1.5px solid #007284;
+    border: 2px solid #007284;
     border-top: 5px solid #007284;
     border-radius: 13px;
     padding: 20px 15px;
@@ -621,6 +753,14 @@
     padding: 5px 10px;
 }
 
+.form-check-payment-card{
+    align-items: flex-start;
+}
+
+.form-check-input-payment{
+    margin-top: 6px;
+}
+
 
 
 @media only screen and (max-width: 767px) {
@@ -629,73 +769,102 @@
     padding-left: 10px;
 }
 .header-cont h3 {
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 14px;
+        
 }
 .live {
-    font-size: 25px;
+    display: none;
+}
+
+.time {
+    padding: 0px 4px;
 }
 .time-content {
     column-gap: 8px;
+}
+
+.time .number{
+    font-size: 18px;
+}
+.time .text{
+    font-size: 13px;
 }
 .banner-cont h3 {
     font-size: 22px;
 }
 .banner-cont h4 {
-    font-size: 25px;
+    font-size: 14px;
 }
 .banner-cont h1 {
-    font-size: 35px;
+    font-size: 18px;
 }
 .section-title h2 {
-    font-size: 30px;
+    font-size: 21px;
+}
+.section-title {
+    border-radius: 12px;
+}
+
+.slider-box {
+    padding: 0px 0px;
 }
 .description-cont {
-    padding: 0px;
+    padding: 0px 20px;
     margin-bottom: 30px;
 }
+
+.description-cont ul {
+    padding: 0px 20px 0px 10px;
+}
+
 .description-cont h3 {
-    padding: 10px 10px;
-    font-size: 22px;
+    padding: 10px 35px;
+    font-size: 17px;
 }
 .description-cont ul li {
-    font-size: 17px;
+    font-size: 14px;
     gap: 10px;
 }
+
+.description-cont ul li i {
+    font-size: 25px;
+}
+
 .gallery-header h2 {
     font-size: 30px;
 }
 
 .prev, .next {
     padding: 0px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 .prev i, .next i {
-    font-size: 18px;
+    font-size: 16px;
 }
 .exclusive-cont img{
     width: 40%;
 }
 .exclusive-cont h2 {
-    font-size: 30px;
+    font-size: 20px;
 }
 .exclusive-items {
     width: 100%;
     padding: 10px;
+    min-height: 150px;
 }
 .exclusive-items h3 {
-    font-size: 22px;
+    font-size: 15px;
 }
 .exclusive-items p {
-    font-size: 15px;
+    font-size: 13px;
 }
 .form-heading {
     border-radius: 25px;
     padding: 15px;
 }
 .form-heading h2 {
-    font-size: 30px;
+    font-size: 15px;
 }
 .form-box {
     padding: 20px 10px;
@@ -710,47 +879,146 @@
 .form-prducut-cont {
     gap: 6px;
 }
+.form-prducut-box-sec h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.form-cont h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.order-side h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-check-prducut {
+    align-items: flex-start;
+}
+
+.form-prducut-cont {
+    align-items: self-start;
+}
+
 .form-prducut-cont img {
     width: 60px;
 }
 .form-prducut-text h4 {
-    font-size: 14px;
-    margin-bottom: 0px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 .form-prducut-text p {
-    margin-bottom: 0px;
-    font-size: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
-.old-price {
-    font-size: 16px;
+.price-box {
+    margin-bottom: 10px;
 }
-.new-price {
-    font-size: 16px;
+.old-price, .new-price {
+    font-size: 14px;
 }
+
 .form-cont {
     padding: 0px 0px 40px 0px;
 }
-.form-check-input {
-    width: 1em;
-    height: 1em;
+.form-control {
+    height: 40px;
+    font-size: 13px;
 }
+.form-label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
 .form-check-label {
+    font-size: 14px;
     margin-left: 2px;
+    font-weight: 600;
 }
+.form-check-input {
+    width: 16px;
+    height: 16px;
+}
+.padding-0{
+    padding: 0px 2px;
+}
+
+.form-prducut-text{
+    width: 60%;
+}
+.custom-badge {
+    right: -35px;
+    top: 27px;
+    font-size: 12px;
+}
+
 .form-check-input-payment {
     width: 1em;
     height: 1em;
 }
 .form-check-label-payment {
     width: 90%;
+    font-size: 14px;
+    font-weight: 500;
 }
+
+.note p {
+    font-size: 12px;
+}
+.area-box p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
 .form-check-label-payment {
     display: block;
 }
 .form-check-label-payment img{
     margin-left: 20px;
+    width: 90px;
+}
+
+td, th{
+    font-size: 14px;
+}
+
+.btn-submit{
+    font-size: 16px;
+}
+.button-box p {
+    font-size: 14px;
+}
+
+.form-sec-border {
+    padding: 0px;
+}
+.form-heading-sec-pading {
+    padding: 0px;
+}
+.exclusive-sec-padding {
+    padding: 0px;
+}
+.gallery-padding {
+    padding: 0px;
+}
+.description-sec-padding {
+    padding: 0px;
+}
+.slider-padding {
+    padding: 0px;
 }
 }
+
+
+
+
+
+
+
+
+
+
 
     </style>
 
@@ -761,12 +1029,12 @@
     <section class="header-sec">
         <div class="container">
             <div class="row custom-align">
-                <div class="col-md-6">
+                <div class="col-md-6 col-5">
                     <div class="header-cont">
                         <h3>অফার শেষ হতে সময় বাকি</h3>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-7">
                     <div class="header-cont-right">
                         <div class="live">
                             Live
@@ -774,19 +1042,19 @@
                         <div class="time-content">
                             <div class="time days">
                               <span class="number"></span>
-                              <span class="text">days</span>
+                              <span class="text">DAYS</span>
                             </div>
                             <div class="time hours">
                               <span class="number"></span>
-                              <span class="text">hours</span>
+                              <span class="text">HOUR</span>
                             </div>
                             <div class="time minutes">
                               <span class="number"></span>
-                              <span class="text">minutes</span>
+                              <span class="text">MINS</span>
                             </div>
                             <div class="time seconds">
                               <span class="number"></span>
-                              <span class="text">seconds</span>
+                              <span class="text">SECS</span>
                             </div>
                         </div>
                     </div>
@@ -799,143 +1067,143 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="banner-cont text-center">
-                        <h3>লিকপ্রুফ অটো ওয়াটার ফাউসেট</h3>
-                        <h4>বাড়ি, অফিস ও হোটেল যেকোন জায়গায় Perfect</h4>
-                        <h1>স্মার্ট ওয়াটার স্টপ ফাউসেট</h1>
+                    <div class="slider-padding">
+                        <div class="banner-cont text-center">
+                            <h3>লিকপ্রুফ অটো ওয়াটার ফাউসেট</h3>
+                            <h4>বাড়ি, অফিস ও হোটেল যেকোন জায়গায় Perfect</h4>
+                            <h1>স্মার্ট ওয়াটার স্টপ ফাউসেট</h1>
+                        </div>
+
+                        <div class="slider-box">
+                            <div class="owl-carousel banner-owl-carousel owl-theme">
+                              <div class="gallery-item">
+                                <div class="project-gallery-feature">
+                                  <img src="images/g1.png" alt="gallery">
+                                </div>
+                              </div>
+                              <div class="gallery-item">
+                                <div class="project-gallery-feature">
+                                  <img src="images/g2.png" alt="gallery">
+                                </div>
+                              </div>
+                              <div class="gallery-item">
+                                <div class="project-gallery-feature">
+                                  <img src="images/g4.png" alt="gallery">
+                                </div>
+                              </div>
+                              <div class="gallery-item">
+                                <div class="project-gallery-feature">
+                                  <img src="images/g4.png" alt="gallery">
+                                </div>
+                              </div>
+                            </div>
+                            <button class="prev btn btn-primary">
+                              <i class="bi bi-arrow-left"></i>
+                            </button>
+                            <button class="next btn btn-primary">
+                              <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-md-center mt-4">
-                <div class="col-md-7">
-
-                    <div class="slider-box">
-                        <div class="owl-carousel banner-owl-carousel owl-theme">
-                          <div class="gallery-item">
-                            <div class="project-gallery-feature">
-                              <img src="images/g1.png" alt="gallery">
-                            </div>
-                          </div>
-                          <div class="gallery-item">
-                            <div class="project-gallery-feature">
-                              <img src="images/g2.png" alt="gallery">
-                            </div>
-                          </div>
-                          <div class="gallery-item">
-                            <div class="project-gallery-feature">
-                              <img src="images/g4.png" alt="gallery">
-                            </div>
-                          </div>
-                          <div class="gallery-item">
-                            <div class="project-gallery-feature">
-                              <img src="images/g4.png" alt="gallery">
-                            </div>
-                          </div>
-                        </div>
-                        <button class="prev btn btn-primary">
-                          <i class="bi bi-arrow-left"></i>
-                        </button>
-                        <button class="next btn btn-primary">
-                          <i class="bi bi-arrow-right"></i>
-                        </button>
-
-                        
-                    </div>
-                    <div class="shop-now text-center">
-                            <a href="#form-section">Shop Now</a>
-                        </div>
-                    
-                </div>
-            </div>
+          
         </div>
     </section>
+
+    <div class="shop-now text-center">
+        <a href="#form-section">Shop Now</a>
+    </div>
 
     <section class="description-sec">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-title">
-                        <h2>স্মার্ট ওয়াটার স্টপ ফাউসেট সম্পর্কে জানুন</h2>
+                    <div class="description-sec-padding">
+                        <div class="section-title">
+                            <h2>স্মার্ট ওয়াটার স্টপ ফাউসেট সম্পর্কে জানুন</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="description-cont">
+                                    <h3>কেন দরকার এই Water Tap টি?</h3>
+
+                                    <ul>
+                                        <li><i class="bi bi-check-circle-fill"></i> অটোমেটিক পানি বন্ধ/চালু – মেশিন চালু হলে পানি চলবে, বন্ধ হলে থেমে যাবে</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> লিকপ্রুফ ডিজাইন – পানি লিক বা ঝরবে না।</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> সহজ ইনস্টলেশন – ঘরেই সহজে লাগানো যায়।</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> দীর্ঘস্থায়ী উপকরণ – কপার/স্টিল বডি, মরিচা ধরে না।</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> নিরাপদ ঘর ও মেশিন – ওভারফ্লো বা চাপজনিত ক্ষতি থেকে রক্ষা করে।</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="description-cont">
+                                    <h3>কেনো এটা কিনবেন?</h3>
+
+                                    <ul>
+                                        <li><i class="bi bi-check-circle-fill"></i> পানি সাশ্রয়ী প্রযুক্তি — প্রতিদিন অজান্তে অপচয় হওয়া পানি বাঁচায়</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> বাড়িতে ছোট বাচ্চা? কাজের লোক পানি বন্ধ করতে ভুলে যায় তাদ্দের জন্য</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> এক মিনিটেই ইনস্টল – মিস্ত্রি দরকার নেই।</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> স্মার্ট হোমের জন্য স্মার্ট কল।</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> লিকপ্রুফ ও টেকসই – মরিচা পড়ে না।</li>
+                                    </ul>
+
+                                    <div class="dec-order-btn">
+                                        <a href="#form-section">অর্ডার করতে চাই</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="description-cont">
-                        <h3>কেন দরকার এই Water Tap টি?</h3>
-
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> অটোমেটিক পানি বন্ধ/চালু – মেশিন চালু হলে পানি চলবে, বন্ধ হলে থেমে যাবে</li>
-                            <li><i class="bi bi-check-circle-fill"></i> লিকপ্রুফ ডিজাইন – পানি লিক বা ঝরবে না।</li>
-                            <li><i class="bi bi-check-circle-fill"></i> সহজ ইনস্টলেশন – ঘরেই সহজে লাগানো যায়।</li>
-                            <li><i class="bi bi-check-circle-fill"></i> দীর্ঘস্থায়ী উপকরণ – কপার/স্টিল বডি, মরিচা ধরে না।</li>
-                            <li><i class="bi bi-check-circle-fill"></i> নিরাপদ ঘর ও মেশিন – ওভারফ্লো বা চাপজনিত ক্ষতি থেকে রক্ষা করে।</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="description-cont">
-                        <h3>কেনো এটা কিনবেন?</h3>
-
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> পানি সাশ্রয়ী প্রযুক্তি — প্রতিদিন অজান্তে অপচয় হওয়া পানি বাঁচায়</li>
-                            <li><i class="bi bi-check-circle-fill"></i> বাড়িতে ছোট বাচ্চা? কাজের লোক পানি বন্ধ করতে ভুলে যায় তাদ্দের জন্য</li>
-                            <li><i class="bi bi-check-circle-fill"></i> এক মিনিটেই ইনস্টল – মিস্ত্রি দরকার নেই।</li>
-                            <li><i class="bi bi-check-circle-fill"></i> স্মার্ট হোমের জন্য স্মার্ট কল।</li>
-                            <li><i class="bi bi-check-circle-fill"></i> লিকপ্রুফ ও টেকসই – মরিচা পড়ে না।</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="shop-now text-center">
-                    <a href="#form-section">Shop Now</a>
-                </div>
-            </div>
+            
         </div>
     </section>
 
     <section class="gallery-sec">
+
+        <div class="elementor-shape elementor-shape-top" aria-hidden="true" data-negative="false">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="elementor-shape-fill" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+<path class="elementor-shape-fill" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+<path class="elementor-shape-fill" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+</svg></div>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="gallery-header">
-                        <h2>পন্যর বিস্তারিত</h2>
-                    </div>
-                    <div class="slider-box">
-                        <div class="owl-carousel gallery-owl-carousel owl-theme">
-                          <div class="gallery-item">
-                            <div class="project-gallery-feature">
-                              <img src="images/g1.png" alt="gallery">
-                            </div>
-                          </div>
-                          <div class="gallery-item">
-                            <div class="project-gallery-feature">
-                              <img src="images/g2.png" alt="gallery">
-                            </div>
-                          </div>
-                          <div class="gallery-item">
-                            <div class="project-gallery-feature">
-                              <img src="images/g4.png" alt="gallery">
-                            </div>
-                          </div>
-                          <div class="gallery-item">
-                            <div class="project-gallery-feature">
-                              <img src="images/g4.png" alt="gallery">
-                            </div>
-                          </div>
+                    <div class="gallery-padding">
+                        <div class="gallery-header">
+                            <h2>পন্যর বিস্তারিত</h2>
                         </div>
-                        <button class="prev btn btn-primary">
-                          <i class="bi bi-arrow-left"></i>
-                        </button>
-                        <button class="next btn btn-primary">
-                          <i class="bi bi-arrow-right"></i>
-                        </button>
+                        <div class="row gallery-box">
+                            <div class="col-md-3">
+                                <div class="gallery-item">
+                                    <img src="images/g1.png" alt="gallery">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="gallery-item">
+                                    <img src="images/g1.png" alt="gallery">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="gallery-item">
+                                    <img src="images/g1.png" alt="gallery">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="gallery-item">
+                                    <img src="images/g1.png" alt="gallery">
+                                </div>
+                            </div>
 
-                    </div>
-
-                        <div class="shop-now text-center">
-                            <a href="#form-section">Shop Now</a>
                         </div>
+                    </div>   
                 </div>
             </div>
         </div>
@@ -958,32 +1226,48 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="exclusive-item-box">
-                        <div class="exclusive-items">
-                            <h3>Auto Water Control — স্বয়ংক্রিয় পানি নিয়ন্ত্রণ</h3>
-                            <p>পানি ওভারফ্লো বা অপচয় রোধ করে নিজে নিজেই পানি বন্ধ হয়ে যায়, ফলে পানির বিল কমে এবং ঘরের নিরাপত্তা বাড়ে।</p>
-                        </div>
-                        <div class="exclusive-items">
-                            <h3>Leak Protection System — লিকেজ থেকে সম্পূর্ণ সুরক্ষা</h3>
-                            <p>পাইপ লিক, ট্যাপ ফাঁস বা হঠাৎ পানির চাপ বেড়ে গেলে স্বয়ংক্রিয়ভাবে পানি বন্ধ করে দেয়, পানি নষ্ট হওয়া ও ক্ষতি প্রতিরোধ করে।</p>
-                        </div>
-                        <div class="exclusive-items">
-                            <h3>Instant Response Sensor — সাথে সাথে কাজ করে</h3>
-                            <p>স্মার্ট সেন্সর প্রযুক্তির মাধ্যমে মিলিসেকেন্ডের মধ্যেই রেসপন্স, ফলে দুর্ঘটনার আগেই পানি প্রবাহ বন্ধ হয়।</p>
-                        </div>
-                        <div class="exclusive-items">
-                            <h3>Easy Installation — ঝামেলাবিহীন ইনস্টলেশন</h3>
-                            <p>কোনো প্লাম্বার ছাড়াই নিজেই সহজে লাগাতে পারবেন, সব ধরনের স্ট্যান্ডার্ড পাইপ ও ট্যাপের সাথে সামঞ্জস্যপূর্ণ।</p>
-                        </div>
-                        <div class="exclusive-items">
-                            <h3>Water Saving Technology — পানির অপচয় কমায়</h3>
-                            <p>প্রতিদিনের অপ্রয়োজনীয় পানির অপচয় ৪০–৬০% পর্যন্ত কমায়, পরিবেশ ও আপনার বাজেট দুটোই সুরক্ষিত রাখে।</p>
-                        </div>
-                        <div class="exclusive-items">
-                            <h3>Home Safety Upgrade — ঘরের নিরাপত্তা বাড়ায়</h3>
-                            <p>বাথরুম, কিচেন, ওয়াশিং মেশিন বা ট্যাংক—সব জায়গায় ব্যবহারযোগ্য, ঘরকে করে তোলে স্মার্ট ও সেফ।</p>
-                        </div>
+                    <div class="exclusive-sec-padding">
+                        <div class="exclusive-item-box">
+                            <div class="exclusive-items">
+                                <h3>Auto Water Control — স্বয়ংক্রিয় পানি নিয়ন্ত্রণ</h3>
+                                <p>পানি ওভারফ্লো বা অপচয় রোধ করে নিজে নিজেই পানি বন্ধ হয়ে যায়, ফলে পানির বিল কমে এবং ঘরের নিরাপত্তা বাড়ে।</p>
+                            </div>
+                            <div class="exclusive-items">
+                                <h3>Leak Protection System — লিকেজ থেকে সম্পূর্ণ সুরক্ষা</h3>
+                                <p>পাইপ লিক, ট্যাপ ফাঁস বা হঠাৎ পানির চাপ বেড়ে গেলে স্বয়ংক্রিয়ভাবে পানি বন্ধ করে দেয়, পানি নষ্ট হওয়া ও ক্ষতি প্রতিরোধ করে।</p>
+                            </div>
+                            <div class="exclusive-items">
+                                <h3>Instant Response Sensor — সাথে সাথে কাজ করে</h3>
+                                <p>স্মার্ট সেন্সর প্রযুক্তির মাধ্যমে মিলিসেকেন্ডের মধ্যেই রেসপন্স, ফলে দুর্ঘটনার আগেই পানি প্রবাহ বন্ধ হয়।</p>
+                            </div>
+                            <div class="exclusive-items">
+                                <h3>Easy Installation — ঝামেলাবিহীন ইনস্টলেশন</h3>
+                                <p>কোনো প্লাম্বার ছাড়াই নিজেই সহজে লাগাতে পারবেন, সব ধরনের স্ট্যান্ডার্ড পাইপ ও ট্যাপের সাথে সামঞ্জস্যপূর্ণ।</p>
+                            </div>
+                            <div class="exclusive-items">
+                                <h3>Water Saving Technology — পানির অপচয় কমায়</h3>
+                                <p>প্রতিদিনের অপ্রয়োজনীয় পানির অপচয় ৪০–৬০% পর্যন্ত কমায়, পরিবেশ ও আপনার বাজেট দুটোই সুরক্ষিত রাখে।</p>
+                            </div>
+                            <div class="exclusive-items">
+                                <h3>Home Safety Upgrade — ঘরের নিরাপত্তা বাড়ায়</h3>
+                                <p>বাথরুম, কিচেন, ওয়াশিং মেশিন বা ট্যাংক—সব জায়গায় ব্যবহারযোগ্য, ঘরকে করে তোলে স্মার্ট ও সেফ।</p>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-heading-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-heading-sec-pading">
+                        <div class="form-heading">
+                            <h2>সঠিক তথ্য দিয়ে নিচের ফর্ম পূরণ করুন</h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -994,16 +1278,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="form-heading">
-                        <h2>সঠিক তথ্য দিয়ে নিচের ফর্ম পূরণ করুন</h2>
-                    </div>
-
+                  <div class="form-sec-border">
+                    
                     <div class="form-box">
                         <div class="form-prducut-box-sec">
                             <h3>Your Products</h3>
 
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 padding-0">
                                     <div class="form-prducut-itmes">
                                         <div class="custom-badge">সেরা পন্যর খেতাব</div>
                                         <div class="form-group">
@@ -1147,8 +1429,8 @@
                                                 <img src="images/bkash.png">
                                               </label>
                                             </div>
-                                            <div class="form-check-payment">
-                                              <input class="form-check-input-payment" type="radio" name="delivery" id="card" value="card">
+                                            <div class="form-check-payment form-check-payment-card">
+                                              <input class="form-check-input-payment form-check-input-payment" type="radio" name="delivery" id="card" value="card">
                                               <label class="form-check-label-payment" for="card">
                                                  Credit/Debit Card/NetBanking এর মধ্যমে পে করুন
                                                  <img src="images/sslcz-verified.png">
@@ -1166,7 +1448,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                  </div>
                 </div>
             </div>
         </div>
@@ -1232,7 +1514,7 @@
       dots: false,
       responsive: {
         0: { items: 1 },
-        576: { items: 2 },
+        576: { items: 1 },
         992: { items: 1 }
       }
     });
@@ -1250,32 +1532,6 @@
 </script>
 
 
-<script>
-  $(function () {
-    const $owl = $('.gallery-owl-carousel').owlCarousel({
-      loop: true, 
-      margin: 16,
-      nav: false,
-      autoplay: true,
-      dots: false,
-      responsive: {
-        0: { items: 1 },
-        576: { items: 2 },
-        992: { items: 4 }
-      }
-    });
-
-    // Next button
-    $('.next').on('click', function () {
-      $owl.trigger('next.owl.carousel');
-    });
-
-    // Previous button
-    $('.prev').on('click', function () {
-      $owl.trigger('prev.owl.carousel');
-    });
-  });
-</script>
 
 
 <script type="text/javascript">
