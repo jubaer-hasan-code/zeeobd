@@ -25,9 +25,14 @@
     font-size: 30px;
 }
 
-.banner-sec{
+/* .banner-sec{
     background-color: #e5f0f2;
     padding: 50px 0px;
+} */
+
+.banner-sec {
+    background-color: #e5f0f2;
+    padding: 50px 0px 0px;
 }
 
 .banner-cont h3{
@@ -761,9 +766,17 @@
     margin-top: 6px;
 }
 
+.banner-bg{
+    background: url('images/banner-bg.png') no-repeat center center;
+    background-size: cover;
+    padding-bottom: 200px;
+}
 
 
 @media only screen and (max-width: 767px) {
+    .banner-bg{
+    padding-bottom: 60px;
+}
     .header-cont-right {
     gap: 15px;
     padding-left: 10px;
@@ -1064,6 +1077,7 @@ td, th{
     </section>
 
     <section class="banner-sec">
+        <div class="banner-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -1107,7 +1121,7 @@ td, th{
                     </div>
                 </div>
             </div>
-          
+          </div>
         </div>
     </section>
 
